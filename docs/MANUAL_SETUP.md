@@ -15,6 +15,22 @@ Install:
 
 Confirm each executable is available from the terminal. Create a new private GitHub repository, clone it, copy this build pack into its root, and make the baseline commit.
 
+After PA-001, from the repository root:
+
+```bash
+corepack enable
+pnpm install --frozen-lockfile
+pnpm lint
+pnpm format:check
+pnpm typecheck
+pnpm test
+pnpm build
+pnpm --filter @pa/web dev
+pnpm --filter @pa/worker dev
+```
+
+Web health: `http://localhost:3000/api/health`. Worker health: `http://localhost:3001/health`.
+
 Recommended branch flow for a solo project:
 
 1. Keep `main` releasable.

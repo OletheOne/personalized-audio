@@ -1,0 +1,33 @@
+# Dependencies
+node_modules
+
+# Builds and caches
+dist
+.next
+out
+.turbo
+*.tsbuildinfo
+coverage
+
+# Logs and debug
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment (PA-003 will add a committed .env.example)
+.env
+.env.*
+!.env.example
+
+# Editors and OS
+.DS_Store
+Thumbs.db
+.idea
+.vscode/*
+!.vscode/extensions.json
+
+# Test and tooling artifacts
+playwright-report
+test-results
+.eslintcache
