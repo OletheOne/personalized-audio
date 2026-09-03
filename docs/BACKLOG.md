@@ -17,7 +17,7 @@ Status legend: `[ ]` not started · `[~]` active · `[x]` complete · `[!]` bloc
 - Root lint, format, typecheck, test, and build commands work from a clean install.
 - No business logic or provider integration is fabricated; architecture boundaries and path aliases are enforced.
 
-### [ ] PA-002 — Establish automated quality gates
+### [x] PA-002 — Establish automated quality gates
 
 **Goal:** Add local and GitHub Actions checks that protect `main`.  
 **Depends on:** PA-001.

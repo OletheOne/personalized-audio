@@ -19,7 +19,10 @@ pnpm format:check
 pnpm typecheck
 pnpm test
 pnpm build
+pnpm quality
 ```
+
+`pnpm quality` runs lint, format check, typecheck, unit tests, and production builds in the same order as GitHub Actions. Pull requests must pass the **Quality gates** check. Branch-protection settings the owner must enable are in [`docs/CI.md`](docs/CI.md).
 
 Run the health entrypoints:
 

@@ -8,3 +8,4 @@ coverage
 docs
 *.md
 .git
+**/next-env.d.ts

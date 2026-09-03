@@ -25,9 +25,12 @@ pnpm format:check
 pnpm typecheck
 pnpm test
 pnpm build
+pnpm quality
 pnpm --filter @pa/web dev
 pnpm --filter @pa/worker dev
 ```
+
+`pnpm quality` is the local equivalent of the GitHub Actions quality gates. After PA-002, enable the branch-protection settings in `docs/CI.md` so `main` cannot merge without the **Quality gates** check.
 
 Web health: `http://localhost:3000/api/health`. Worker health: `http://localhost:3001/health`.
 

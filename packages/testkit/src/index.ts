@@ -17,3 +17,11 @@ export {
   FORBIDDEN_DOMAIN_SOURCE_PATTERNS,
   readWorkspaceGraph,
 } from "./workspace-files.js";
+export {
+  collectLocalScriptProblems,
+  collectProveScriptProblems,
+  collectWorkflowProblems,
+  REQUIRED_GATE_STEP_NAMES,
+  REQUIRED_INSTALL_COMMAND,
+  REQUIRED_QUALITY_GATE_COMMANDS,
+} from "./quality-gates.js";
