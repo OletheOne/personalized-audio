@@ -14,7 +14,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "turbo typecheck",
-    "test": "turbo test"
+    "test": "turbo test",
+    "quality": "node scripts/run-quality-gates.mjs",
+    "prove:gates": "node scripts/prove-quality-gates.mjs"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",

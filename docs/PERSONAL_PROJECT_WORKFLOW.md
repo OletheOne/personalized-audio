@@ -24,12 +24,11 @@ git remote add origin <your-private-repository-url>
 git push -u origin main
 ```
 
-Then enable branch protection after PA-002:
+Then enable branch protection after PA-002. Exact clicks, check name (**Quality gates**), and cache/concurrency notes are in `docs/CI.md`. In short:
 
 - require a pull request before merge;
-- require the CI status checks added by PA-002;
-- require branches to be up to date before merge;
-- block force pushes and deletion of `main`;
+- require the **Quality gates** status check to pass and the branch to be up to date;
+- block force pushes and deletion of `main` (or `master` if it is still the default);
 - allow you to self-approve if GitHub’s personal-repository rules require it, but still read the diff.
 
 ## Story loop
@@ -69,10 +68,7 @@ Useful review commands:
 git status --short
 git diff --stat main...HEAD
 git diff main...HEAD
-pnpm lint
-pnpm typecheck
-pnpm test
-pnpm build
+pnpm quality
 ```
 
 Use only commands that exist at the current story; PA-001 creates them.
