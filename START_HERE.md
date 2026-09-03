@@ -24,7 +24,7 @@ Do not start several stories at once. Complete them in numeric order unless a st
 4. Create an empty Git repository and copy this pack into it.
 5. Commit the untouched pack as the baseline.
 6. Open `agent-prompts/SEQUENTIAL_PROMPTS.md` and give Story PA-001 to a coding agent.
-7. Review the agent's diff and evidence. Run the required verification commands.
+7. Review the agent's diff and evidence. Run the root commands in `README.md` (`pnpm install --frozen-lockfile`, lint, format check, typecheck, test, and both production builds).
 8. Mark the story complete in `docs/BACKLOG.md`, update `docs/DECISION_LOG.md` if needed, and commit.
 9. Continue to the next unblocked story.
 

@@ -6,7 +6,7 @@ Status legend: `[ ]` not started · `[~]` active · `[x]` complete · `[!]` bloc
 
 ## Feature F0 — Repository and engineering foundation
 
-### [ ] PA-001 — Scaffold the monorepo
+### [x] PA-001 — Scaffold the monorepo
 
 **Goal:** Create the pnpm/Turborepo TypeScript structure defined in the architecture.  
 **Depends on:** none.
